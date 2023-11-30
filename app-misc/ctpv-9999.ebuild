@@ -16,3 +16,7 @@ RDEPEND="media-gfx/imagemagick
 src_install() {
     emake DESTDIR="${D}" PREFIX="${EPREFIX}"/usr install
 }
+
+pkg_postinst() {
+    elog "Check homepage for optional programs to allow greater file preview support."
+}
