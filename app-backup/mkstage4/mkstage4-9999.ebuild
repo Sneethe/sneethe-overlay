@@ -6,8 +6,8 @@ EAPI=8
 inherit git-r3
 
 DESCRIPTION="Bash Utility for Creating Stage 4 Tarballs"
-HOMEPAGE="https://github.com/TheChymera/mkstage4"
-EGIT_REPO_URI="https://github.com/TheChymera/${PN}.git"
+HOMEPAGE="https://github.com/Sneethe/mkstage4"
+EGIT_REPO_URI="https://github.com/Sneethe/${PN}.git"
 
 LICENSE="GPL-3"
 SLOT="0"
