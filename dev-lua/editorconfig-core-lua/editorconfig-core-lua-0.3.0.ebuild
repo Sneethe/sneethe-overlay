@@ -8,18 +8,16 @@ inherit cmake lua-single
 DESCRIPTION="EditorConfig Core bindings for Lua"
 HOMEPAGE="https://github.com/editorconfig/editorconfig-core-lua"
 SRC_URI="https://github.com/editorconfig/editorconfig-core-lua/archive/refs/tags/v$PV.tar.gz -> ${PN}.tar.gz"
-#SRC_URI="https://github.com/editorconfig/editorconfig-core-lua/archive/refs/tags/v$PV.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="amd64"
 
-RDEPEND="${LUA_DEPS}
+RDEPEND=">=dev-lang/lua-5.2
 	app-text/editorconfig-core-c
 "
-BDEPEND="${RDEPEND}
-	dev-util/cmake
-"
+BDEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}"
 
 src_configure() {
 	cmake_src_configure
