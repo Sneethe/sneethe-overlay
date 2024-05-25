@@ -3,7 +3,7 @@
 
 EAPI=8
 LUA_COMPAT=( lua5-{2..4} )
-inherit cmake lua-single
+inherit cmake lua
 
 DESCRIPTION="EditorConfig Core bindings for Lua"
 HOMEPAGE="https://github.com/editorconfig/editorconfig-core-lua"
